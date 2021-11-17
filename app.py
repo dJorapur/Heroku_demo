@@ -4,7 +4,7 @@ from flask import Flask,request
 
 app = Flask(__name__)
 
-model = joblib.load(open('Iris_Model.pkl','rb'))
+model = joblib.load(open('Iris_model.pkl','rb'))
 
 @app.route('/predict', methods=['GET','POST'])
 def predict():
